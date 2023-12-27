@@ -309,7 +309,7 @@ struct RestrictEventsPolicy {
 
 	static uint32_t getCoreCount() {
 		// I think AMD patches bork the topology structure, go over all the packages assuming single CPU systems.
-		// REF: https://github.com/acidanthera/bugtracker/issues/1625#issuecomment-831602457
+		// REF: https://github.com/devicemanager/bugtracker/issues/1625#issuecomment-831602457
 		// REF: https://github.com/AMD-OSX/bugtracker/issues/112
 		uint32_t b = 0, c = 0, d = 0;
 		CPUInfo::getCpuid(0, 0, nullptr, &b, &c, &d);
@@ -375,7 +375,7 @@ struct RestrictEventsPolicy {
 		}
 		if (strstr(value, "auto", strlen("auto"))) {
 			// Do not enable Memory and PCI UI patching on real Macs
-			// Reference: https://github.com/acidanthera/bugtracker/issues/2046
+			// Reference: https://github.com/devicemanager/bugtracker/issues/2046
 			enableMemoryUiPatching = info->firmwareVendor != DeviceInfo::FirmwareVendor::Apple;
 			enablePciUiPatching = info->firmwareVendor != DeviceInfo::FirmwareVendor::Apple;
 			enableCpuNamePatching = true;

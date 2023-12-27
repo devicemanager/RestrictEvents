@@ -1,9 +1,9 @@
 RestrictEvents
 ==============
 
-[![Build Status](https://github.com/acidanthera/RestrictEvents/workflows/CI/badge.svg?branch=master)](https://github.com/acidanthera/RestrictEvents/actions) [![Scan Status](https://scan.coverity.com/projects/22252/badge.svg?flat=1)](https://scan.coverity.com/projects/22252)
+[![Build Status](https://github.com/devicemanager/RestrictEvents/workflows/CI/badge.svg?branch=master)](https://github.com/devicemanager/RestrictEvents/actions) [![Scan Status](https://scan.coverity.com/projects/22252/badge.svg?flat=1)](https://scan.coverity.com/projects/22252)
 
-[Lilu](https://github.com/acidanthera/Lilu) Kernel extension for blocking unwanted processes causing compatibility issues on different hardware and unlocking the support for certain features restricted to other hardware. The list of blocks currently includes:
+[Lilu](https://github.com/devicemanager/Lilu) Kernel extension for blocking unwanted processes causing compatibility issues on different hardware and unlocking the support for certain features restricted to other hardware. The list of blocks currently includes:
 
 - `/System/Library/CoreServices/ExpansionSlotNotification`
 - `/System/Library/CoreServices/MemorySlotNotification`
